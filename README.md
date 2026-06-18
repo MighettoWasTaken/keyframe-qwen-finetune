@@ -83,7 +83,7 @@ uv run python make_preview.py          # -> outputs/preview.html (live animation
 
 ## Hardware
 
-Developed on RTX 4080 (16GB VRAM), CUDA 12.4. Training: ~93 optimizer steps over 3 epochs, ~20 minutes.
+Developed on RTX 4080 (16GB VRAM), CUDA 12.4. Training: ~93 optimizer steps over 3 epochs, ~1 hr.
 
 ## Project structure
 
