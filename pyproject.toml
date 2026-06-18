@@ -1,0 +1,35 @@
+[project]
+name = "fluentdev-probe"
+version = "0.1.0"
+description = "CSS keyframes fine-tuning — 24hr challenge"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "datasets>=3.0.0",
+    "pandas>=2.2",
+    "tqdm>=4.67",
+    "huggingface-hub>=0.33",
+    "transformers>=4.53",
+    "trl>=0.19",
+    "peft>=0.16",
+    "accelerate>=1.8",
+    "bitsandbytes>=0.46",
+    "torch>=2.5",
+    "wandb>=0.19",
+    "anthropic>=0.30",
+    "playwright>=1.40",
+    "pillow>=10.0",
+    "python-dotenv>=1.0",
+    "matplotlib>=3.11.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+# Route torch to the CUDA 12.4 wheel (RTX 4080 / Ada Lovelace)
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true

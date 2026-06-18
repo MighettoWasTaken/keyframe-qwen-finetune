@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.pytest_cache/
+
+# Environment — keep .env.example tracked, never the real .env
+.env
+.env.*
+!.env.example
+
+# ML artifacts — too large for git
+outputs/qwen3b-keyframes-lora/
+checkpoints/
+runs/
+wandb/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# HuggingFace cache
+.cache/
+
+# Claude Code project session files
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

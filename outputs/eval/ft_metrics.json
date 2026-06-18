@@ -1,0 +1,23 @@
+{
+  "tag": "ft",
+  "adapter": "outputs/qwen3b-keyframes-lora",
+  "n": 130,
+  "judged": true,
+  "perplexity": 1.4258786206976672,
+  "mean_loss": 0.35478819964396136,
+  "format_valid_rate": 0.7846153846153846,
+  "raw": {
+    "render_pass": 62,
+    "render_rate": 0.47692307692307695,
+    "match_of_rendered": 0.6935483870967742,
+    "valid_and_match": 43,
+    "knockout_rate": 0.6692307692307693
+  },
+  "extracted": {
+    "render_pass": 62,
+    "render_rate": 0.47692307692307695,
+    "match_of_rendered": 0.6774193548387096,
+    "valid_and_match": 42,
+    "knockout_rate": 0.676923076923077
+  }
+}
